@@ -1,0 +1,12 @@
+/* pages/me/me.wxss */
+.hr{
+  height: 5px;
+  background-color: #cccccc;
+  margin: 10px;
+}
+
+.account{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}

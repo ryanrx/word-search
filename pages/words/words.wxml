@@ -1,0 +1,6 @@
+<!--pages/words/words.wxml-->
+<view class="timer">
+  <view class="time">{{timer}}</view>
+  <button bindtap="start">Start</button>
+  <button bindtap="stop">Stop</button>
+</view>

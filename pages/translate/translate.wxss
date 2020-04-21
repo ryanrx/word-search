@@ -1,0 +1,5 @@
+/* pages/translate/translate.wxss */
+.button{
+  background-color: green;
+  width: 20rpx;
+}

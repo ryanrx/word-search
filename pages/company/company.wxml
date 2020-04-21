@@ -1,0 +1,51 @@
+<!--pages/company/company.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+
+  <view class="content">
+  <view class="hr"></view>
+  <!--用户名模块-->
+  <view class="item">
+    <input type="text" name="loginName" placeholder="请设置4-20位用户名" placeholder-class="holder" bindblur="accountblur"></input>
+  </view>
+
+  <!--密码模块-->
+  <view class="item flex">
+    <input type="text" password name="password" placeholder="请设置6-20位登录密码" placeholder-class="holder"></input>
+    <switch type="switch" name="switch"></switch>
+  </view>
+
+  <!--工商注册模块-->
+  <view class="item">
+    <input type="text" name="company" placeholder="请填写工商注册名称" placeholder-class="holder"></input>
+  </view>
+
+  <!--联系人模块-->
+  <view class="item">
+    <input type="text" name="userName" placeholder="联系人名称" placeholder-class="holder"></input>
+  </view>
+
+  <!--手机号模块-->
+  <view class="mobileInfo">
+    <view class="mobile">
+      <input type="text" name="mobile" placeholder="请输入手机号" placeholder-class="holder"></input>
+    </view>
+    <view class="code">发送验证码</view>
+  </view>
+
+  <!--短信验证模块-->
+  <view class="item">
+    <input type="text" name="code" placeholder="短信验证码" placeholder-class="holder"></input>
+  </view>
+
+  <!--注册按钮-->
+  <button class="btn" disabled="{{diabled}}" type="{{btnstate}}" form-type="submit">注册</button>
+
+  <!--协议模块-->
+  <view class="xieyi">
+    <text class="agree">注册及视为同意</text>
+    <text class="opinion">《用户注册协议》</text>
+  </view>
+
+  </view>
+
+</form>

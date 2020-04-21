@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/search/search",
+    "pages/translate/translate",
+    "pages/words/words",
+    "pages/me/me",
+    "pages/company/company",
+    "pages/mobile/mobile",
+    "pages/i/i"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#494949",
+    "navigationBarTitleText": "开心查单词",
+    "navigationBarTextStyle": "white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "cloud": true,
+  "tabBar": {
+  "selectedColor": "#3498DE",
+    "list": [
+      {
+      "pagePath": "pages/search/search",
+      "text": "查单词",
+      "iconPath": "pages/image/tabbar/search1.png",
+      "selectedIconPath": "pages/image/tabbar/search2.png"
+    },
+    {
+      "pagePath": "pages/translate/translate",
+      "text": "翻译",
+      "iconPath": "pages/image/tabbar/translate1.png",
+      "selectedIconPath": "pages/image/tabbar/translate2.png"
+    },
+    {
+      "pagePath": "pages/words/words",
+      "text": "单词本",
+      "iconPath": "pages/image/tabbar/words1.png",
+      "selectedIconPath": "pages/image/tabbar/words2.png"
+    },
+    {
+      "pagePath": "pages/me/me",
+      "text": "我的",
+      "iconPath": "pages/image/tabbar/me1.png",
+      "selectedIconPath": "pages/image/tabbar/me2.png"
+    }
+    ]
+  }
+}

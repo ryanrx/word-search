@@ -1,0 +1,46 @@
+<!--pages/search/search.wxml-->
+<view class='content'>
+  <view class='search'>
+    <input class='search-input' placeholder="请在此处输入你要查询的内容" auto-focus></input>
+    <button class="search-button" size="mini">搜索</button>
+  </view>
+
+  <view class="poster">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" style="width:100%;height:176px;"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class="menu">
+    <view class="menu-item">
+      <image src="../image/menu/best2.png" style="width:25px;height:23px"></image>
+      <view>今日最佳</view>
+    </view>
+    <view class="menu-item">
+      <image src="../image/menu/hot2.png" style="width:25px;height:23px"></image>
+      <view>实时最热</view>
+    </view>
+    <view class="menu-item">
+      <image src="../image/menu/teacher2.png" style="width:25px;height:23px"></image>
+      <view>名师指导</view>
+    </view>
+    <view class="menu-item">
+      <image src="../image/menu/buy2.png" style="width:25px;height:23px"></image>
+      <view>图书订购</view>
+    </view>
+  </view>
+
+  <view class="hr"></view>
+  <view class="listhead">
+    <view>列表信息栏</view>
+    <view class="moresign">></view>
+  </view>
+  <import src="../template/template.wxml"/>
+  <view>
+    <template is="searchlist" data="{{array}}"/>
+  </view>
+</view>
