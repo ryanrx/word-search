@@ -1,3 +1,4 @@
+//zheshishenme
 //app.js
 App({
   onLaunch: function () {
