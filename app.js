@@ -1,5 +1,5 @@
 //zheshishenme
-//app.js
+//app.js ?????
 App({
   onLaunch: function () {
     if (!wx.cloud) {
