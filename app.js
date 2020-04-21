@@ -1,4 +1,5 @@
 //app.js
+// okhaode
 App({
   onLaunch: function () {
     if (!wx.cloud) {
